@@ -1,12 +1,12 @@
 
-.container {
-    width: 100%;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+// .container {
+//     width: 100%;
+//     min-height: 100vh;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
    
-}
+// }
 
 .content{
     width: 100%;
@@ -315,6 +315,16 @@ color: #ffffff;
   .img1  {
 
     width: 50%;
+    border-radius: 5%;
   
   }
   
+
+  @media screen and (max-width: 600px) {
+    .img1  {
+
+      width: 100%;
+      border-radius: 5%;
+    
+    }
+  }

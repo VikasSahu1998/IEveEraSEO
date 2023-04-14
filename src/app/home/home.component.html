@@ -42,21 +42,19 @@
                     </div>
                     <h3>{{card.Title}}</h3>
                     <p>
-                        {{card.Description}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis
-                        laboriosam odio magnam, recusandae nisi atque modi deserunt quas doloremque, eos animi debitis
-                        in rem eum, rerum eveniet officia soluta.
+                        {{card.Description}}
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-  
-    <div class="container-fluid" id="Home" >
-        <div class="row" >
+
+    <div class="container-fluid" id="Home">
+        <div class="row">
             <div class="col-lg-7" align="center" style="margin-top: 2%;">
-                <img class="img1" src="https://www.comfygen.com/img/one-of-the-fastest-way-to-business-growth.webp" alt="Hi"
-                    srcset="">
+                <img class="img1" src="https://www.comfygen.com/img/one-of-the-fastest-way-to-business-growth.webp"
+                    alt="Hi" srcset="">
             </div>
             <div class="col-lg-5 " style="margin-top: 2%;">
 
@@ -64,13 +62,79 @@
 
                 <h1 class="mt-4">Think extensively, Design intelligently, Develop quickly.</h1>
 
-                
+
                 <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia, fugit veritatis
                     saepe, possimus suscipit dicta vel, molestias voluptates rerum similique cumque quae alias soluta
                     quasi minus nostrum dolorum. Vitae!
                 </p>
-                <h2 class="mt-4"> Get Instant Professional Advice
-                    Ready <br> to Help : +91 9587867258</h2>
+                <div class="card w-75 mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Get Instant Professional Advice Ready<p class="card-text">to Help : +91
+                                0000000000</p>
+                        </h5>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="section-header text-center" style=" margin-top: 10%;">
+                <h2 class="fw-bold fs-1">
+                    Why
+                    <span class="b-class-secondary">We Are Your Best </span>Choice
+                </h2>
+                <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
+            </div>
+        </div>
+        <div class="row  " style="margin-top: 4%; ">
+            <div class="col" *ngFor="let card of cards1">
+                <div class="card" style="width: 18rem; margin-top: 2%; background-color: rgba(59,130,246,.5)">
+                    <div class="icon-wrapper " style=" margin-top: 10%;">
+                        <h1 class="text-white">{{card.number}}</h1>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">{{card.Title}}</h5>
+                        <p class="card-text">{{card.Description}}</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" >
+        <div class="row" style=" margin-top: 5%;">
+            <div class="col-lg-7" align="center" >
+                <img class="img1" src="https://www.comfygen.com/img/one-of-the-fastest-way-to-business-growth.webp"
+                    alt="Hi" srcset="">
+            </div>
+            <div class="col-lg-5 ">
+
+                <h3>Here's what we do</h3>
+
+                <h1 class="mt-4">Our mission is to develop products that people love to use.</h1>
+
+
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia, fugit veritatis
+                    saepe, possimus suscipit dicta vel, molestias voluptates rerum similique cumque quae alias soluta
+                    quasi minus nostrum dolorum. Vitae!
+                </p>
+                <div class="row">
+                    <div class="col" *ngFor="let card of cards2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{card.Title}}</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" style="border-radius: 5%;">Know More</button>
             </div>
         </div>
     </div>

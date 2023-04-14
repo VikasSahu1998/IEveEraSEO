@@ -32,4 +32,37 @@ export class HomeComponent {
       Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis laboriosam odio magnam, recusandae nisi atque modi deserunt quas doloremque, eos animi debitisin rem eum, rerum eveniet officia soluta.',
     }
   ]
+
+  cards1 = [
+    {
+      number: '01',
+      Title: 'Cost-effectiveness',
+      Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis laboriosam odio magnam, recusandae nisi atque modi deserunt quas doloremque, eos animi debitisin rem eum, rerum eveniet officia soluta.'
+    },
+    {
+      number: '02',
+      Title: 'Team of Experts',
+      Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis laboriosam odio magnam, recusandae nisi atque modi deserunt quas doloremque, eos animi debitisin rem eum, rerum eveniet officia soluta.'
+    },
+    {
+      number: '03',
+      Title: 'We are available 24x7',
+      Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis laboriosam odio magnam, recusandae nisi atque modi deserunt quas doloremque, eos animi debitisin rem eum, rerum eveniet officia soluta.'
+    },
+    {
+      number: '04',
+      Title: 'Timely delivery',
+      Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis laboriosam odio magnam, recusandae nisi atque modi deserunt quas doloremque, eos animi debitisin rem eum, rerum eveniet officia soluta.'
+    }
+  ]
+
+  cards2 = [
+    {
+      Title: 'Our Vision',
+    },
+    {
+      Title: 'Our Mission',
+    },
+  ]
+
 }
