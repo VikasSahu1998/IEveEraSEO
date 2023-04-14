@@ -1,24 +1,77 @@
 <body>
-<div class="container-fluid">
-    <div class="row">
-    <div class="content">
-        <div class="square twitch" style="margin-bottom: 50px;">
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
-            <div class="circle">
-                <h2 class="DrugRadar"> IEveEraSEO
+    <div class="container-fluid">
+        <div class="row">
+            <div class="content">
+                <div class="square twitch" style="margin-bottom: 50px;">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                    <div class="circle">
+                        <h2 class="DrugRadar"> IEveEraSEO
 
-                </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing el</p>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing el</p>
+                    </div>
+                </div>
+
+                <a href="" class="button" target="_parent">
+                    <span class="actual-text">&nbsp;Dashboard&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;Dashboard&nbsp;</span>
+                </a>
             </div>
         </div>
-
-        <a href="" class="button" target="_parent">
-            <span class="actual-text">&nbsp;Dashboard&nbsp;</span>
-            <span class="hover-text" aria-hidden="true">&nbsp;Dashboard&nbsp;</span>
-        </a>
     </div>
-</div>
-</div>
 </body>
+<!-- ADVERTISERS SERVICE CARD -->
+<section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="section-header text-center">
+                <h2 class="fw-bold fs-1">
+                    Our
+                    <span class="b-class-secondary">Web And Mobile App Development With SEO </span>Services
+                </h2>
+                <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
+            </div>
+        </div>
+        <div class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
+            <div class="col" *ngFor="let card of cards">
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>{{card.Title}}</h3>
+                    <p>
+                        {{card.Description}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis
+                        laboriosam odio magnam, recusandae nisi atque modi deserunt quas doloremque, eos animi debitis
+                        in rem eum, rerum eveniet officia soluta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="container-fluid" id="Home" >
+        <div class="row" >
+            <div class="col-lg-7" align="center" style="margin-top: 2%;">
+                <img class="img1" src="https://www.comfygen.com/img/one-of-the-fastest-way-to-business-growth.webp" alt="Hi"
+                    srcset="">
+            </div>
+            <div class="col-lg-5 " style="margin-top: 2%;">
+
+                <h3>About us</h3>
+
+                <h1 class="mt-4">Think extensively, Design intelligently, Develop quickly.</h1>
+
+                
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia, fugit veritatis
+                    saepe, possimus suscipit dicta vel, molestias voluptates rerum similique cumque quae alias soluta
+                    quasi minus nostrum dolorum. Vitae!
+                </p>
+                <h2 class="mt-4"> Get Instant Professional Advice
+                    Ready <br> to Help : +91 9587867258</h2>
+            </div>
+        </div>
+    </div>
+</section>
