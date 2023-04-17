@@ -60,18 +60,38 @@
 
                 <h3>About us</h3>
 
-                <h1 class="mt-4">Think extensively, Design intelligently, Develop quickly.</h1>
+                <h1 class="mt-4" style="color: rgb(255, 23, 131);">Think extensively, Design intelligently, Develop
+                    quickly.</h1>
 
 
                 <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia, fugit veritatis
                     saepe, possimus suscipit dicta vel, molestias voluptates rerum similique cumque quae alias soluta
                     quasi minus nostrum dolorum. Vitae!
                 </p>
-                <div class="card w-75 mb-3">
+                <!-- <div class="card w-75 mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Get Instant Professional Advice Ready<p class="card-text">to Help : +91
                                 0000000000</p>
                         </h5>
+                    </div>
+                </div> -->
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="100" fill="currentColor"
+                                class="bi bi-headphones" viewBox="0 0 16 16" style="color: #0060fa;">
+                                <path
+                                    d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
+                            </svg>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h1 class="card-title">Get Instant Professional Advice Ready
+                                </h1>
+                                <p class="card-text">to Help : +91
+                                    0000000000</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -90,25 +110,26 @@
                 <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
             </div>
         </div>
-        <div class="row  " style="margin-top: 4%; ">
-            <div class="col" *ngFor="let card of cards1">
-                <div class="card" style="width: 18rem; margin-top: 2%; background-color: rgba(59,130,246,.5)">
-                    <div class="icon-wrapper " style=" margin-top: 10%;">
-                        <h1 class="text-white">{{card.number}}</h1>
-                    </div>
+        <div class="row">
+            <div class="col-6" *ngFor="let card of cards1">
+                <div class="card " style=" margin-top: 2%; border-radius: 30px; ">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">{{card.Title}}</h5>
+                        <h1 class="card-title" style="font-size: xxx-large; color: #0060fa;">{{card.number}}</h1>
+
+                        <h2 class="card-title" style="color: rgb(255, 23, 131);">{{card.Title}}</h2>
                         <p class="card-text">{{card.Description}}</p>
 
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 
-    <div class="container-fluid" >
+    <div class="container-fluid">
         <div class="row" style=" margin-top: 5%;">
-            <div class="col-lg-7" align="center" >
+            <div class="col-lg-7" align="center">
                 <img class="img1" src="https://www.comfygen.com/img/one-of-the-fastest-way-to-business-growth.webp"
                     alt="Hi" srcset="">
             </div>
@@ -116,7 +137,8 @@
 
                 <h3>Here's what we do</h3>
 
-                <h1 class="mt-4">Our mission is to develop products that people love to use.</h1>
+                <h1 class="mt-4" style="color: rgb(255, 23, 131);">Our mission is to develop products that people love
+                    to use.</h1>
 
 
                 <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia, fugit veritatis
@@ -126,15 +148,109 @@
                 <div class="row">
                     <div class="col" *ngFor="let card of cards2">
                         <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">{{card.Title}}</h5>
+
+                            <div class="card-body mt-2">
+                                <h1 class="card-title">{{card.Title}}</h1>
                             </div>
                         </div>
+                        <!-- <div class="card mb-3" style="max-width: 250px;">
+                            <div class="row g-0 ">
+                                 <div class="col-md-4 text-center mt-2">
+                                    <i class="{{card.icon}} i1" ></i>
+                                </div> 
+                                <div class="col-md-8 ">
+                                    <div class="card-body " >
+                                        <h1 class="card-title ">{{card.Title}}</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
 
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-primary" style="border-radius: 5%;">Know More</button>
+                <button class="btn btn-3 mt-2">Know More</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col" *ngFor="let card of cards4">
+                <div class="card mt-4"
+                    style="width: 80rem; height: 35rem;  border-radius: 60px;    background-image: linear-gradient( #0c0a81cc,#a46bf2cc);">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="card-body text-light mt-4 px-md-5">
+
+                                <h1 style="font-size: xx-large;" class="card-title">{{card.Title}}</h1>
+                                <p class="card-text ">{{card.p1}}</p>
+                                <p class="card-text ">{{card.p1}}</p>
+                               
+                                <p class="card-text"> {{card.p1}}</p>
+                                <button class="btn btn-3  mt-4">{{card.but}}</button>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="mt-4 ">
+                                <img src="\assets\imgpsh.jpg" class="navbar-brand" alt="IEveEra-SEO LOGO" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span><br></span>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="section-header text-center" style=" margin-top: 10%;">
+                <h2 class="fw-bold fs-1">
+                    Modus
+                    <span class="b-class-secondary" style="color: rgb(255, 23, 131);">
+                         Operandi Of Our 
+                        </span>Services
+                </h2>
+                <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mt-4" *ngFor="let card of cards5">
+                <div class="card">
+                    <h1 class="card-header">{{card.n}} </h1>
+                    <div class="card-body">
+                      <h2 class="card-title" style="color: rgb(255, 23, 131);">{{card.Title}}</h2>
+                      <p class="card-text">{{card.p1}}</p>
+                    
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+                    <mat-tab label="First">
+                        <mat-card class="example-card">
+                            <mat-card-header>
+                              <div mat-card-avatar class="example-header-image"></div>
+                              <mat-card-title>Shiba Inu</mat-card-title>
+                              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                            </mat-card-header>
+                            </mat-card>
+                    </mat-tab>
+                    <mat-tab label="Second">Content 2</mat-tab>
+                    <mat-tab label="Third">Content 3</mat-tab>
+                  </mat-tab-group>
             </div>
         </div>
     </div>

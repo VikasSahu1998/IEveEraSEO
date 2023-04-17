@@ -328,3 +328,22 @@ color: #ffffff;
     
     }
   }
+
+  .btn-3 {
+    color: #fff;
+    padding: 18px 32px;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 30px;
+    background: #3A86FF;
+}
+
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

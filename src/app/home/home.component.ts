@@ -58,11 +58,85 @@ export class HomeComponent {
 
   cards2 = [
     {
+      icon:'bi bi-lightbulb',
       Title: 'Our Vision',
     },
     {
+      icon:'bi bi-lightbulb',
       Title: 'Our Mission',
     },
   ]
 
+  cards3 = [
+    {
+      icon:'bi bi-lightbulb',
+      Title: 'Our Vision',
+    },
+    {
+      icon:'bi bi-lightbulb',
+      Title: 'Our Mission',
+    },
+  ]
+
+  cards4 = [
+    {
+      Title: 'Cricket Live Line App & Web Development',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+     
+      but:'View Cricket Demo',
+    },
+    {
+      Title: 'News App and Web platform Development Company',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+     
+      but:'View News App',
+    },
+    {
+      Title: 'E-Commerce App And Web Development Company',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+     
+      but:'View Comfygens ',
+    },
+  ]
+
+
+  
+  cards5 = [
+    {
+      n:'01',
+      Title: 'Requirement Gathering',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+    },
+    {
+      n:'02',
+      Title: 'Strategy and Execution',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+    },
+    {
+      n:'03',
+      Title: 'Prototyping Phase UI/UX',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+    },
+    {
+      n:'04',
+      Title: 'Development Phase',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+    },
+    {
+      n:'05',
+      Title: 'Testing and Deployment',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+    },
+    {
+      n:'06',
+      Title: 'Swift Launch',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+    },
+    {
+      n:'07',
+      Title: 'Maintenance & further Growth Support',
+      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+    },
+  ]
+  
 }
