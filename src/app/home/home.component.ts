@@ -139,4 +139,38 @@ export class HomeComponent {
     },
   ]
   
+  cards6 = [
+    {
+      icon:'01',
+      Title: 'Mongodb',  
+    },
+    {
+      icon:'01',
+      Title: 'Google Cloud',  
+    },
+    {
+      icon:'01',
+      Title: 'Azure',  
+    },
+    {
+      icon:'01',
+      Title: 'Nginx',  
+    },
+    {
+      icon:'01',
+      Title: 'Digital Ocean',  
+    },
+    {
+      icon:'01',
+      Title: 'Mysql',  
+    },
+    {
+      icon:'01',
+      Title: 'Amazon Webservices',  
+    },
+    {
+      icon:'01',
+      Title: 'Amazon',  
+    },
+  ]
 }

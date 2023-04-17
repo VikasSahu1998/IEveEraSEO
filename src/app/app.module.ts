@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
+import { BannerComponent } from './banner/banner.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
+    BannerComponent,
  
   ],
   imports: [

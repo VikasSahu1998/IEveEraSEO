@@ -1,31 +1,16 @@
-<body>
-    <div class="container-fluid">
+<section>
+    <div class="container">
         <div class="row">
-            <div class="content">
-                <div class="square twitch" style="margin-bottom: 50px;">
-                    <span class="one"></span>
-                    <span class="two"></span>
-                    <span class="three"></span>
-                    <div class="circle">
-                        <h2 class="DrugRadar"> IEveEraSEO
-
-                        </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing el</p>
-                    </div>
-                </div>
-
-                <a href="" class="button" target="_parent">
-                    <span class="actual-text">&nbsp;Dashboard&nbsp;</span>
-                    <span class="hover-text" aria-hidden="true">&nbsp;Dashboard&nbsp;</span>
-                </a>
+            <div class="col " style="margin-top: 10%;">
+                <app-banner></app-banner>
             </div>
         </div>
     </div>
-</body>
+</section>
 <!-- ADVERTISERS SERVICE CARD -->
 <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
-    <div class="container">
-        <div class="row">
+    <div class="container" align="center" style="margin-top: 15%;">
+        <div class="row ">
             <div class="section-header text-center">
                 <h2 class="fw-bold fs-1">
                     Our
@@ -34,7 +19,7 @@
                 <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
             </div>
         </div>
-        <div class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
+        <div class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center te">
             <div class="col" *ngFor="let card of cards">
                 <div class="service-card">
                     <div class="icon-wrapper">
@@ -49,7 +34,8 @@
         </div>
     </div>
 
-
+</section>
+<section>
     <div class="container-fluid" id="Home">
         <div class="row">
             <div class="col-lg-7" align="center" style="margin-top: 2%;">
@@ -99,7 +85,8 @@
             </div>
         </div>
     </div>
-
+</section>
+<section>
     <div class="container ">
         <div class="row">
             <div class="section-header text-center" style=" margin-top: 10%;">
@@ -126,7 +113,8 @@
 
         </div>
     </div>
-
+</section>
+<section>
     <div class="container-fluid">
         <div class="row" style=" margin-top: 5%;">
             <div class="col-lg-7" align="center">
@@ -147,7 +135,7 @@
                 </p>
                 <div class="row">
                     <div class="col" *ngFor="let card of cards2">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
 
                             <div class="card-body mt-2">
                                 <h1 class="card-title">{{card.Title}}</h1>
@@ -177,9 +165,9 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col" *ngFor="let card of cards4">
+            <div class="col-12" *ngFor="let card of cards4">
                 <div class="card mt-4"
-                    style="width: 80rem; height: 35rem;  border-radius: 60px;    background-image: linear-gradient( #0c0a81cc,#a46bf2cc);">
+                    style=" border-radius: 60px;    background-image: linear-gradient( #0c0a81cc,#a46bf2cc);">
 
                     <div class="row">
                         <div class="col">
@@ -188,7 +176,7 @@
                                 <h1 style="font-size: xx-large;" class="card-title">{{card.Title}}</h1>
                                 <p class="card-text ">{{card.p1}}</p>
                                 <p class="card-text ">{{card.p1}}</p>
-                               
+
                                 <p class="card-text"> {{card.p1}}</p>
                                 <button class="btn btn-3  mt-4">{{card.but}}</button>
                             </div>
@@ -196,7 +184,8 @@
                         </div>
                         <div class="col-6">
                             <div class="mt-4 ">
-                                <img src="\assets\imgpsh.jpg" class="navbar-brand" alt="IEveEra-SEO LOGO" srcset="">
+                                <img src="\assets\imgpsh.jpg" class="navbar-brand imgggg" alt="IEveEra-SEO LOGO"
+                                    srcset="">
                             </div>
                         </div>
                     </div>
@@ -213,8 +202,8 @@
                 <h2 class="fw-bold fs-1">
                     Modus
                     <span class="b-class-secondary" style="color: rgb(255, 23, 131);">
-                         Operandi Of Our 
-                        </span>Services
+                        Operandi Of Our
+                    </span>Services
                 </h2>
                 <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
             </div>
@@ -224,11 +213,11 @@
                 <div class="card">
                     <h1 class="card-header">{{card.n}} </h1>
                     <div class="card-body">
-                      <h2 class="card-title" style="color: rgb(255, 23, 131);">{{card.Title}}</h2>
-                      <p class="card-text">{{card.p1}}</p>
-                    
+                        <h2 class="card-title" style="color: rgb(255, 23, 131);">{{card.Title}}</h2>
+                        <p class="card-text">{{card.p1}}</p>
+
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -240,18 +229,26 @@
             <div class="col">
                 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
                     <mat-tab label="First">
-                        <mat-card class="example-card">
-                            <mat-card-header>
-                              <div mat-card-avatar class="example-header-image"></div>
-                              <mat-card-title>Shiba Inu</mat-card-title>
-                              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-                            </mat-card-header>
-                            </mat-card>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3" *ngFor="let card of cards6">
+                                    <mat-card class="example-card mt-4 mb-3">
+                                        <mat-card-header>
+                                            <div mat-card-avatar class="example-header-image"></div>
+                                            <mat-card-title class="mt-2">{{card.Title}}</mat-card-title>
+
+                                        </mat-card-header>
+                                    </mat-card>
+                                </div>
+                            </div>
+                        </div>
                     </mat-tab>
-                    <mat-tab label="Second">Content 2</mat-tab>
-                    <mat-tab label="Third">Content 3</mat-tab>
-                  </mat-tab-group>
+
+                </mat-tab-group>
+
             </div>
+
         </div>
     </div>
+
 </section>
