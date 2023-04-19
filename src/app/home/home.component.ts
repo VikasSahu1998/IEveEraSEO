@@ -58,22 +58,22 @@ export class HomeComponent {
 
   cards2 = [
     {
-      icon:'bi bi-lightbulb',
+      icon: 'bi bi-lightbulb',
       Title: 'Our Vision',
     },
     {
-      icon:'bi bi-lightbulb',
+      icon: 'bi bi-lightbulb',
       Title: 'Our Mission',
     },
   ]
 
   cards3 = [
     {
-      icon:'bi bi-lightbulb',
+      icon: 'bi bi-lightbulb',
       Title: 'Our Vision',
     },
     {
-      icon:'bi bi-lightbulb',
+      icon: 'bi bi-lightbulb',
       Title: 'Our Mission',
     },
   ]
@@ -81,96 +81,136 @@ export class HomeComponent {
   cards4 = [
     {
       Title: 'Cricket Live Line App & Web Development',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
-     
-      but:'View Cricket Demo',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+
+      but: 'View Cricket Demo',
     },
     {
       Title: 'News App and Web platform Development Company',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
-     
-      but:'View News App',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+
+      but: 'View News App',
     },
     {
       Title: 'E-Commerce App And Web Development Company',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
-     
-      but:'View Comfygens ',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+
+      but: 'View Comfygens ',
     },
   ]
 
 
-  
+
   cards5 = [
     {
-      n:'01',
+      n: '01',
       Title: 'Requirement Gathering',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
     },
     {
-      n:'02',
+      n: '02',
       Title: 'Strategy and Execution',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
     },
     {
-      n:'03',
+      n: '03',
       Title: 'Prototyping Phase UI/UX',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
     },
     {
-      n:'04',
+      n: '04',
       Title: 'Development Phase',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
     },
     {
-      n:'05',
+      n: '05',
       Title: 'Testing and Deployment',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
     },
     {
-      n:'06',
+      n: '06',
       Title: 'Swift Launch',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
     },
     {
-      n:'07',
+      n: '07',
       Title: 'Maintenance & further Growth Support',
-      p1:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
+      p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit a nesciunt assumenda dolorum qui quae maiores rerum neque accusantium sapiente laudantium, eos vel repudiandae nam eius itaque illum doloremque?',
     },
   ]
-  
+
   cards6 = [
     {
-      icon:'01',
-      Title: 'Mongodb',  
+      icon: '01',
+      Title: 'Mongodb',
     },
     {
-      icon:'01',
-      Title: 'Google Cloud',  
+      icon: '01',
+      Title: 'Google Cloud',
     },
     {
-      icon:'01',
-      Title: 'Azure',  
+      icon: '01',
+      Title: 'Azure',
     },
     {
-      icon:'01',
-      Title: 'Nginx',  
+      icon: '01',
+      Title: 'Nginx',
     },
     {
-      icon:'01',
-      Title: 'Digital Ocean',  
+      icon: '01',
+      Title: 'Digital Ocean',
     },
     {
-      icon:'01',
-      Title: 'Mysql',  
+      icon: '01',
+      Title: 'Mysql',
     },
     {
-      icon:'01',
-      Title: 'Amazon Webservices',  
+      icon: '01',
+      Title: 'Amazon Webservices',
     },
     {
-      icon:'01',
-      Title: 'Amazon',  
+      icon: '01',
+      Title: 'Amazon',
     },
   ]
+
+  cards7 = [
+    {
+      Image:'',
+      Name:'Vikas Sahu',
+      Profile:'Angular Developer',
+      About:'',
+      facebook:'',
+      linkdin:'',
+      Instagram:'',
+    },
+    {
+      Image:'',
+      Name:'Susheel Gupta',
+      Profile:'Angular Developer',
+      About:'',
+      facebook:'',
+      linkdin:'',
+      Instagram:'',
+    },
+    {
+      Image:'',
+      Name:'',
+      Profile:'',
+      About:'',
+      facebook:'',
+      linkdin:'',
+      Instagram:'',
+    },
+    {
+      Image:'',
+      Name:'',
+      Profile:'',
+      About:'',
+      facebook:'',
+      linkdin:'',
+      Instagram:'',
+    },
+  ]
+
 }

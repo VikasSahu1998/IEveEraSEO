@@ -228,7 +228,52 @@
         <div class="row">
             <div class="col">
                 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
-                    <mat-tab label="First">
+                    <mat-tab label="BackEnd">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3" *ngFor="let card of cards6">
+                                    <mat-card class="example-card mt-4 mb-3">
+                                        <mat-card-header>
+                                            <div mat-card-avatar class="example-header-image"></div>
+                                            <mat-card-title class="mt-2">{{card.Title}}</mat-card-title>
+
+                                        </mat-card-header>
+                                    </mat-card>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="ForntEnd">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3" *ngFor="let card of cards6">
+                                    <mat-card class="example-card mt-4 mb-3">
+                                        <mat-card-header>
+                                            <div mat-card-avatar class="example-header-image"></div>
+                                            <mat-card-title class="mt-2">{{card.Title}}</mat-card-title>
+
+                                        </mat-card-header>
+                                    </mat-card>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Mobile">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3" *ngFor="let card of cards6">
+                                    <mat-card class="example-card mt-4 mb-3">
+                                        <mat-card-header>
+                                            <div mat-card-avatar class="example-header-image"></div>
+                                            <mat-card-title class="mt-2">{{card.Title}}</mat-card-title>
+
+                                        </mat-card-header>
+                                    </mat-card>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Design">
                         <div class="container">
                             <div class="row">
                                 <div class="col-3" *ngFor="let card of cards6">
@@ -244,6 +289,7 @@
                         </div>
                     </mat-tab>
 
+
                 </mat-tab-group>
 
             </div>
@@ -252,3 +298,68 @@
     </div>
 
 </section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-header text-center" style=" margin-top: 10%;">
+                    <h2 class="fw-bold fs-1">
+                        Meet Our
+                        <span class="b-class-secondary" style="color: rgb(255, 23, 131);">
+                            Advisor
+                        </span>
+                    </h2>
+                    <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4">
+                <img src="https://www.ashokprasad.com/assets/images/about/about-1.png" alt="" srcset=""
+                    style="width: 100%; height: 90%;">
+            </div>
+            <div class="col-8">
+                <h1 style="color: rgb(255, 23, 131);">Ashok Prasad (Abhishek)</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur, dicta excepturi dolor
+                    doloribus recusandae nihil molestias officia aliquam blanditiis quibusdam nulla, illum libero
+                    reiciendis natus adipisci cumque magnam corporis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-header text-center" style=" margin-top: 10%;">
+                    <h2 class="fw-bold fs-1">
+                        Team <br>
+                        <span class="b-class-secondary" style="color: rgb(255, 23, 131); font-size: xx-large;">
+                            Our Leaders
+                        </span>
+                    </h2>
+                    <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="team-boxed">
+            <div class="row people">
+                <div class="col-md-3 col-lg-3 item" *ngFor="let card of cards7">
+                    <div class="box">
+                        <img class="rounded-circle" src="https://tinypic.host/images/2023/02/21/pikrepo.com-2.jpg">
+                        <h3 class="name">{{card.Name}}</h3>
+                        <p class="title">{{card.Profile}}</p>
+                        <p class="description">{{card.About}}</p>
+                        <div class="social">
+                            <a href="#"><i class="fa fa-facebook-official">{{card.facebook}}</i></a>
+                            <a href="#"><i class="fa fa-twitter">{{card.linkdin}}</i></a>
+                            <a href="#"><i class="fa fa-instagram">{{card.Instagram}}</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-contact-form></app-contact-form>

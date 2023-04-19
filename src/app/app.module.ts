@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import { BannerComponent } from './banner/banner.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { BannerComponent } from './banner/banner.component';
     HeaderComponent,
     HomeComponent,
     BannerComponent,
+    ContactFormComponent,
  
   ],
   imports: [
