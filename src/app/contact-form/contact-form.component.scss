@@ -1,86 +1,154 @@
-html{
+// # Contact
 
-    box-sizing:border-box;
-}
-*{
-  box-sizing:inherit;
-}
-body{
-  
-  width:90%;
-  max-width: 800px;
-  margin:50px auto;
-  font-family: Calibri, Arial, sans-serif;
-  padding:20px;
-}
-h1, p{
+.contact .info-box {
+  color: #444444;
   text-align: center;
-}
-label{
-  display:block;
-  margin:1em 0 .2em;
-}
-/* single-line text, checkbox, and button */
-input, select, textarea{
-  display:block;
-  width:100%;
-  padding:.3em;
-  font-size:20px;
-  background-color:#fbfbfb;
-  border:solid 1px #CCC;
-  resize:vertical;
-}
-textarea{
-  min-height:180px;
-}
-select{
-  color:indigo;
-}
-option{
-  color:blue;
-  background: lavenderBlush;
-}
-input[type=checkbox]{
-  display:inline;
-  width:auto;
-  color:red;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
 }
 
-input[type=submit]{
-  background:rgb(255, 23, 131);
-  margin:1em 0 0;
-  color:white;
-  border:none;
-  border-radius:8px;
-  transition:all .3s ease-out;
+.contact .info-box i {
+  font-size: 32px;
+  color: #5846f9;
+  border-radius: 50%;
+  padding: 8px;
 }
 
-input:focus,
-input:hover,
-select:focus,
-select:hover,
-textarea:focus,
-textarea:hover{
-  background: lavenderBlush;
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #2c4964;
+  font-weight: 700;
+  margin: 10px 0;
 }
 
-/* hover and focus states */
-input[type=submit]:hover,
-input[type=submit]:focus{
-  background: lightgreen;
-  outline:none;
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
-@media screen and (min-width:600px) {
-  /*  make the form 2 columns */
-  form:after{
-    content:'';
-    display:block;
-    clear:both;
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  background: #fff;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #5846f9;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #5846f9;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #7b27d8;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
   }
-  .column{
-    width:50%;
-    padding:1em;
-    float:left;
+
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+
+mat-form-field {
+  width: 100%;
+}
+
+.sec-icon {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.sec-icon::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: -70px;
+  margin-top: -5.5px;
+  top: 60%;
+  background: #333333;
+  width: 50px;
+}
+
+.sec-icon::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  right: -70px;
+  margin-top: -5.5px;
+  top: 60%;
+  background: #333;
+  width: 50px;
 }

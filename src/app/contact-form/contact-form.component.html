@@ -1,39 +1,125 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <form>
-                <h1>Contact Us</h1>
-                <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+<section id="contact" class="contact section-bg">
+    <div class="container" data-aos="fade-up">
 
-                <div class="column">
-                    <label for="the-name">Your Name</label>
-                    <input type="text" name="name" id="the-name" required>
-
-                    <label for="the-email">Email Address</label>
-                    <input type="email" name="email" id="the-email" required>
-
-                    <label for="the-phone">Phone Number</label>
-                    <input type="tel" name="phone" id="the-phone" required>
-
-                    <label for="the-reason">How can we help you?</label>
-                    <select name="reason" id="the-reason" required>
-                        <option value="">Choose one</option>
-                        <option value="web">I need web design services</option>
-                        <option value="video">I need you to produce a video</option>
-                        <option value="3d">I need 3D polygon things</option>
-                    </select>
-                </div>
-                <div class="column">
-                    <label for="the-message">Message</label>
-                    <textarea name="message" id="the-message" required></textarea>
-                    <label>
-                        <input type="checkbox" name="newsletter" value="yes" required> Join our mailing list?
-                    </label>
-                    <input type="submit" value="Send Message">
-                </div>
-            </form>
+        <div class="row ">
+            <div class="section-header text-center">
+                <h2 class="fw-bold fs-1">
+                    Contact
+                    <span class="b-class-secondary" style="color: rgb(255, 23, 131);">US</span>
+                </h2>
+                <p class="sec-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                    <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z"/>
+                  </svg></p>
+            </div>
         </div>
-    </div>
-    <span><br></span>
-</div>
 
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <div class="info-box mb-4">
+                    <i class="bx bx-map"></i>
+                    <h3>Our Address</h3>
+                    <p>408, Laxmi Mall, Laxmi Industrial
+                        Estate Andheri West</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="info-box  mb-4">
+                    <i class="bx bx-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>contact@example.com</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="info-box  mb-4">
+                    <i class="bx bx-phone-call"></i>
+                    <h3>Call Us</h3>
+                    <p>+1 5589 55488 55</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6 ">
+                <iframe class="mb-4 mb-lg-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.9586584492413!2d72.8470427152954!3d19.1532868545148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7564cc1a0b9%3A0x60ead9a363ae0617!2siEVE%20ERA!5e0!3m2!1sen!2sin!4v1666357502804!5m2!1sen!2sin"
+                    frameborder="0" style="border:0; width: 100%; height: 540px;" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-lg-6">
+                <form role="form" class="php-email-form" [formGroup]="ContantUsForm" (ngSubmit)="Onsubmit()" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <!-- input type Name -->
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Full Name</mat-label>
+                                <input matInput placeholder="Enter your name" formControlName="name">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+                                <mat-error
+                                    *ngIf="ContantUsForm.get('name')?.invalid && (ContantUsForm.get('name')?.dirty || ContantUsForm.get('name')?.touched) && ContantUsForm.get('name')?.errors?.required">
+                                    Name is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <!-- input type email -->
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>E-Mail</mat-label>
+                                <input matInput placeholder="E-Mail" formControlName="email">
+                                <mat-icon matSuffix>alternate_email</mat-icon>
+
+                                <mat-error
+                                    *ngIf="!ContantUsForm.get('email')?.errors?.required && (ContantUsForm.get('email')?.errors?.pattern)">
+                                    Please enter a valid <strong>email address</strong>
+                                </mat-error>
+                                <mat-error
+                                    *ngIf="ContantUsForm.get('email')?.invalid && (ContantUsForm.get('email')?.dirty || ContantUsForm.get('email')?.touched) && ContantUsForm.get('email')?.errors?.required">
+                                    Email is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <!-- input type Number  -->
+                        <mat-form-field appearance="outline">
+                            <mat-label>Phone Number</mat-label>
+
+                            <input matInput placeholder="Phone Number" formControlName="PhoneNumber">
+                            <mat-icon matSuffix>call</mat-icon>
+
+                            <mat-error
+                                *ngIf="!ContantUsForm.get('PhoneNumber')?.errors?.required && (ContantUsForm.get('PhoneNumber')?.errors?.pattern)">
+                                Please enter valid Number
+                            </mat-error>
+                            <mat-error
+                                *ngIf="ContantUsForm.get('PhoneNumber')?.invalid && (ContantUsForm.get('PhoneNumber')?.dirty || ContantUsForm.get('PhoneNumber')?.touched) && ContantUsForm.get('PhoneNumber')?.errors?.required">
+                                Phone number is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group mt-3">
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <textarea matInput class="form-control" name="message" rows="5" placeholder="Message"
+                                formControlName="msg" required></textarea>
+                        </mat-form-field>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center">
+                        <button mat-raised-button color="primary" mat-button style="width: 100%;" type="submit" >Submit</button>
+                        </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<span><br><br></span>
