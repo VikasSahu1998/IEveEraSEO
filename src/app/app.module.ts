@@ -18,6 +18,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { WebsiteDevelopmentComponent } from './Web/website-development/website-development.component';
+import { WebsiteDesignComponent } from './Web/website-design/website-design.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     HomeComponent,
     BannerComponent,
     ContactFormComponent,
+    WebsiteDevelopmentComponent,
+    WebsiteDesignComponent,
 
   ],
   imports: [
