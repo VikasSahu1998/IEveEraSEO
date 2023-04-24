@@ -3,6 +3,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
+import { ApiService } from '../Service/api.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -12,7 +13,7 @@ import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 export class ContactFormComponent {
   ContantUsForm!: FormGroup | any;
 
-  constructor(private formbuilder: FormBuilder) { }
+  constructor(private formbuilder: FormBuilder,private api: ApiService) { }
 
   ngOnInit(): void {
     this.ContantUsForm = new FormGroup({
@@ -23,19 +24,35 @@ export class ContactFormComponent {
     },);
   }
 
-  Onsubmit() {
-    // if (this.ContantUsForm.valid)
-    //     .subscribe({
-    //       next: (res) => {
-    //        alert("data added");
-    //         this.ContantUsForm.reset();
-    //       },
-    //       error: () => {
-    //         alert("data error");
-    //       }
-    //     })
+  // Onsubmit() {
+  //   if (this.ContantUsForm.valid)
+  //       .subscribe({
+  //         next: (res) => {
+  //          alert("data added");
+  //           this.ContantUsForm.reset();
+  //         },
+  //         error: () => {
+  //           alert("data error");
+  //         }
+  //       })
 
-    console.log('Your form data : ', this.ContantUsForm.value );
+  //   console.log('Your form data : ', this.ContantUsForm.value );
+  //     }
+
+      Onsubmit(){
+        if(this.ContantUsForm.valid){
+          this.api.postContantUsForm(this.ContantUsForm.value)
+          .subscribe({
+            next:(res)=>{
+              // this.toastr.success('details added successfully', 'successfully', { timeOut: 2000, });
+              console.log("feedback redodeed");
+              this.ContantUsForm.reset();
+             },
+             error: () => {
+              // this.toastr.error('error while adding  the data', 'error', { timeOut: 2000, });
+             }
+          })
+        }
       }
   }
 

@@ -21,6 +21,11 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { WebsiteDevelopmentComponent } from './Web/website-development/website-development.component';
 import { WebsiteDesignComponent } from './Web/website-design/website-design.component';
 import { ECommerceComponent } from './Web/e-commerce/e-commerce.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -48,7 +53,11 @@ import { ECommerceComponent } from './Web/e-commerce/e-commerce.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
+    HttpClientModule
 
   ],
   providers: [],
