@@ -59,4 +59,28 @@ export class WebsiteDevelopmentComponent {
       Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis laboriosam odio magnam, recusandae nisi atque modi deserunt quas doloremque, eos animi debitisin rem eum, rerum eveniet officia soluta.',
     }
   ]
+
+  cardnumber=[
+
+  {
+    head1:'In-Depth Research And Analysis',
+    des1:'Understanding clients requirements: Consultation, Ideation, Goal definition, Deep research.',
+    head2:'Information Gathering & Planning',
+    des2:'Requirements gathering: Planning, Milestone bifurcation, Target Audience, Sitemap and Wireframe formation.',
+    head3:'Web Designing And Development',
+    des3:'Page Layouts, Wireframing, Prototyping, and Approval Cycle and Website Development: Static and Graphic Implementation, Software Coding & Optimization.',
+  },
+  
+  
+  ]
+  cardnumber1=[
+    {
+      head4:'Testing And Quality Assurance',
+      des4:'Performance Testing: Functional and Performance Evaluation, Beta testing, Fixing bugs and issue.',
+      head5:'Website Launch',
+      des5:'Website Deployment: Final touching, Plugin installations, and Launch.',
+      head6:'Maintenance And Support',
+      des6:'Post-deployment and Monitoring: Dosing site backups, General updates, Adding new features, Technology update and Regular support.',
+    },
+  ]
 }

@@ -2,7 +2,7 @@
     <div class="container-fluid imjq">
       <div class="row">
         <div class="col">
-          <h1>The clock<br> <br>
+          <h1 class="clock">The clock<br> <br>
             is <span>ticking</span>.</h1>
           <p>The seconds, minutes, and hours slip away,<br>each one bringing us closer to the future and farther
             from the past</p>
@@ -60,27 +60,28 @@
             quod quae provident <br>blanditiis perferendis fugiat consequatur. Perspiciatis deleniti quasi, consequuntur hic
             ad quia fuga!</p>
         </div>
-        <div class="col-lg-7 mt-4" >
+        <div class="col-lg-6 mt-4" *ngFor="let number of cardnumber">
           <h2><span class="number">01.</span>
-            In-Depth Research And Analysis</h2>
-          <p>Understanding client's requirements: Consultation, Ideation, Goal<br> definition, Deep research.</p>
+           {{ number.head1}}</h2>
+          <p>{{number.des1}}</p>
           <h2><span class="number">02.</span>
-            In-Depth Research And Analysis</h2>
-          <p>Understanding client's requirements: Consultation, Ideation, Goal<br> definition, Deep research.</p>
+            {{ number.head2}}</h2>
+          <p>{{number.des2}}</p>
           <h2><span class="number">03.</span>
-            In-Depth Research And Analysis</h2>
-          <p>Understanding client's requirements: Consultation, Ideation, Goal<br> definition, Deep research.</p>
+            {{ number.head3}}</h2>
+          <p> {{ number.des3}}</p>
         </div>
-        <div class="col-lg-5 mt-4">
-          <h2><span class="number">04.</span>
-            In-Depth Research And Analysis</h2>
-          <p>Understanding client's requirements: Consultation, Ideation, Goal<br> definition, Deep research.</p>
+        <div class="col-lg-6 mt-4" *ngFor="let number of cardnumber1">
+          
+           <h2><span class="number">04.</span>
+            {{ number.head4}}</h2>
+          <p>{{ number.des4}}</p>
           <h2><span class="number">05.</span>
-            In-Depth Research And Analysis</h2>
-          <p>Understanding client's requirements: Consultation, Ideation, Goal<br> definition, Deep research.</p>
+            {{ number.head5}}</h2>
+          <p>{{ number.des5}}</p>
           <h2><span class="number">06.</span>
-            In-Depth Research And Analysis</h2>
-          <p>Understanding client's requirements: Consultation, Ideation, Goal<br> definition, Deep research.</p>
+            {{ number.head6}}</h2>
+          <p>{{ number.des6}}</p>
   
         </div>
       </div>
@@ -94,8 +95,8 @@
           <img class="img1" src="https://www.comfygen.com/images/full-stack.webp" alt="Hi" srcset="">
         </div>
         <div class="col-lg-4 mt-4" >
-          <h1 class="mt-4" style="color: rgb(255, 23, 131);">Full-Stack <br><br>
-            Technologies We  <br><br> Serve</h1>
+          <h1 class="mt-4" style="color: rgb(255, 23, 131);">Full-Stack 
+            Technologies We Serve</h1>
           <p class="mt-4" style="font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Sunt mollitia, fugit veritatis
             saepe, possimus suscipit dicta vel, molestias voluptates rerum similique cumque quae alias soluta
@@ -104,13 +105,6 @@
             natus nihil temporibus iusto debitis animi accusantium. Atque corporis maxime, doloribus eius ad iste totam
             magnam quaerat?
           </p>
-          <!-- <div class="card w-75 mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Get Instant Professional Advice Ready<p class="card-text">to Help : +91
-                                0000000000</p>
-                        </h5>
-                    </div>
-                </div> -->
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4 text-center mt-2">
