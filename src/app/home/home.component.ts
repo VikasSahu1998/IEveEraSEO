@@ -196,7 +196,7 @@ export class HomeComponent {
     {
       Image:'',
       Name:'Ritika Masalia',
-      Profile:'Associate SMM',
+      Profile:'Angular Developer',
       About:'',
       facebook:'',
       linkdin:'',
@@ -204,8 +204,8 @@ export class HomeComponent {
     },
     {
       Image:'',
-      Name:'Nihal Modi',
-      Profile:'CA',
+      Name:'Hephzi Raj',
+      Profile:'Angular Developer',
       About:'',
       facebook:'',
       linkdin:'',
