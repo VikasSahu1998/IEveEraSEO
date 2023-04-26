@@ -96,7 +96,7 @@
             <div class="section-header text-center" style=" margin-top: 10%;">
                 <h2 class="fw-bold fs-1">
                     Why
-                    <span class="b-class-secondary">We Are Your Best </span>Choice
+                    <span class="b-class-secondary" style="color: rgb(255, 23, 131);">We Are Your Best </span>Choice
                 </h2>
                 <p class="sec-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-lightning-charge" viewBox="0 0 16 16">
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6" *ngFor="let card of cards1">
+            <!-- <div class="col-6" *ngFor="let card of cards1">
                 <div class="card " style=" margin-top: 2%; border-radius: 30px; ">
                     <div class="card-body">
                         <h1 class="card-title" style="font-size: xxx-large; color: #0060fa;">{{card.number}}</h1>
@@ -116,15 +116,32 @@
 
                     </div>
                 </div>
+            </div> -->
+            <div class="container hhhhh">
+                <div class="row">
+                    <div class="col" *ngFor="let card of cards1">
+                        <div class="card crd1 mt-mb-4">
+                            <div class="box bo111">
+                                <div class="content">
+                                    <h2>{{card.number}}</h2>
+                                    <h3>{{card.Title}}</h3>
+                                    <p>{{card.Description}}</p>
+                                    <a href="#"> Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-
-
         </div>
     </div>
 </section>
-<section>
+
+<section class="hhhhhhhhh">
     <div class="container-fluid">
-        <div class="row" style=" margin-top: 5%;">
+        <div class="row " style=" margin-top: 5%;">
             <div class="col-lg-7" align="center">
                 <img class="img1" src="https://www.comfygen.com/img/one-of-the-fastest-way-to-business-growth.webp"
                     alt="Hi" srcset="">
@@ -206,7 +223,7 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="section-header text-center" style=" margin-top: 10%;">
+            <div class="section-header text-center" style=" margin-top: 10%; ">
                 <h2 class="fw-bold fs-1">
                     Modus
                     <span class="b-class-secondary" style="color: rgb(255, 23, 131);">
@@ -221,18 +238,35 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4 mt-4" *ngFor="let card of cards5">
-                <div class="card">
+           
+                <!-- <div class="card">
                     <h1 class="card-header">{{card.n}} </h1>
                     <div class="card-body">
                         <h2 class="card-title" style="color: rgb(255, 23, 131);">{{card.Title}}</h2>
                         <p class="card-text">{{card.p1}}</p>
 
                     </div>
-                </div>
+                </div> -->
+              
+                    <div class="container-fluid ">
+        
+                        <div class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 ">
+                            <div class=" card col-md-3 me-4 mt-4  " *ngFor="let card of cards5">
+                                <div class="service-card mt-2">
+                                    <!-- <h1 class="card-title" style="font-size: xxx-large; color: #0060fa;">{{card.n}}</h1> -->
+                                    <div class="card-header mb-2 mt-1" style="font-size: xx-large; color: #0060fa;">{{card.n}}</div>
+                                    <h2 class="card-title" style="color: rgb(255, 23, 131);">{{card.Title}}</h2>
+                                    <p class="card-text mb-4 ">{{card.p1}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+      
             </div>
+
         </div>
-    </div>
+    
 </section>
 
 <section>
