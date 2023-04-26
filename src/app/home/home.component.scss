@@ -270,11 +270,12 @@
 .hhhhh .crd1 {
   position: relative;
   width: 250px;
-  height: 300px;
+  height: 350px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
     inset -5px -5px 5px rgba(255, 255, 255, 0.5),
     5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
   border-radius: 15px;
+  background-color: #fff;
   margin: 30px;
 }
 
